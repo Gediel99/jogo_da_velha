@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/game.css">
+    <script defer src="../js/game.js"></script>
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+    <h1 id="titulo">Jogo da Velha</h1>
+    <div class="game">
+        <div class="players">
+            <div class="player" id="player1">
+                <h1 id="player1Name">Jogador 1</h1>
+                <p id="player1Turn"></p>
+                <h2>Vitórias:</h2>
+                <p id="player1Wins">0</p>
+            </div>
+            <div class="player" id="player2">
+                <h1 id="player2Name">Jogador 2</h1>
+                <p id="player2Turn"></p>
+                <h2>Vitórias:</h2>
+                <p id="player2Wins">0</p>
+            </div>
+        </div>
+        <div class="board-container">
+            <div class="row" id="row-top">
+                <div class="element" id="element-0">
+                </div>
+                <div class="element" id="element-1">
+                </div>
+                <div class="element" id="element-2">
+                </div>
+            </div>
+            <div class="row" id="row-middle">
+                <div class="element" id="element-3">
+                </div>
+                <div class="element" id="element-4">
+                </div>
+                <div class="element" id="element-5">
+                </div>
+            </div>
+            <div class="row" id="row-bottom">
+                <div class="element" id="element-6">
+                </div>
+                <div class="element" id="element-7">
+                </div>
+                <div class="element" id="element-8">
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="resetJogo">Reiniciar</button>
+            <button id="trocarNick">Trocar Nick</button>
+        </div>
+        <div id="overlay" class="overlay">
+            <div id="mensagem" class="mensagem">
+                <h1 id="mensagemTitulo">Jogador 1 Venceu!</h1>
+                <button id="fecharMensagem">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
